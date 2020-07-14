@@ -1,0 +1,429 @@
+@charset"UTF-8";
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: blue;
+	display: block;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner{
+	max-width: 85vw;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header{
+	top: 0;
+	z-index: 999;
+	padding-top: 10px;
+	height: 100px;
+	position: fixed;
+	width: 100%;
+	max-width: 100vw;
+	background: white;
+}
+
+header a{
+	color: black;
+}
+
+.logo{
+	width: 200px;
+}
+
+.logo img{
+	width: 100%;
+}
+
+.nav-global{
+	width: 50%;
+	padding-top: 20px;
+}
+
+.nav-global ul{
+	width: 100%;
+}
+
+.fa-facebook{
+	color: skyblue;
+	font-size: 1.5rem;
+	width: 40px;
+}
+
+.fa-instagram{
+	color: pink;
+	font-size: 1.5rem;
+	width: 40px;
+}
+
+.nav-sub{
+	width: 100vw;
+	height: 50%;
+}
+
+.nav-sub ul{
+	justify-content: space-between;
+	width: 100%;
+}
+
+.nav-sub ul li{
+	border: 1px solid #999;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.l-pan{
+	padding: 10px 100px;
+	background-color: #ddd;
+}
+
+.pan-ul{
+	justify-content: start;
+}
+
+.pan-ul li:last-child a{
+	color: black;
+}
+
+
+.l-page-toptxt{
+	margin-top: 98px;
+	padding: 5vh 100px;
+	background-color: #eee;
+	box-shadow: 0px 5px 10px 0px #aaa inset;
+}
+
+.l-page-toptxt h1{
+	font-size: 2.5rem;
+}
+
+.l-page-toptxt h1 span{
+	font-size: 1.5rem;
+}
+
+.hero-img{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	background-image: url(images/mainVisuali.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0px 5px 10px 0px #aaa inset;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.l-top-txt{
+	margin: 0 auto;
+	width: 600px;
+	text-align: center;
+}
+
+.l-top-txt h4{
+	font-size: 2rem;
+	padding: 20px 0;
+}
+
+.l-top-txt p{
+	line-height: 2;
+}
+
+.nav-sect{
+	width: 100%;
+	margin: 5vh 0;
+}
+
+.nav-sect li{
+	text-align: center;
+	width: 20%;
+	background-color: #ddd;
+	padding: 10px 0;
+}
+
+.nav-sect li:last-child{
+	text-align: center;
+	width: 35%;
+	border: 1px solid black;
+	background-color: white;
+	padding: 10px 0;
+}
+
+.nav-sect li a{
+	color: black;
+}
+
+.nav-sect li a span{
+	float: right;
+	margin-right: 10px;
+}
+
+.l-sect-txt{
+	padding: 10px;
+	background-color: #666;
+	margin: 20px 0;
+}
+
+.l-sect h2{
+	font-size: 2rem;
+	color: white;
+}
+
+.sect-eyecatch img{
+	width: 100%;
+}
+
+.content-txt{
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.l-block-article{
+	margin: 20px 0;
+	border-bottom: 2px solid #aaa;
+}
+
+.article{
+	width: 48%;
+}
+
+.article-title{
+	border: 1px solid #999;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.article-title h3{
+	font-size: 1.5rem;
+}
+
+.article img{
+	width: 100%;
+}
+
+.article figcaption{
+	line-height: 2;
+}
+
+.article-btn{
+	margin: 30px 0;
+}
+
+.article-btn li{
+	width: 49%;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+.article-btn li a{
+	padding: 10px;
+}
+
+.hoge{
+	margin: 0 auto;
+}
+
+.sect-btn{
+	width: 50%;
+	border: 1px solid blue;
+	text-align: center;
+	margin: 30px auto;
+}
+
+.sect-btn a{
+	padding: 20px;
+}
+
+.l-sect span{
+	float: right;
+}
+
+footer{
+	height: 20vh;
+}
+
+/*////////SP/////////////////////////////////////*/
+
+@media screen and (max-width:560px){
+
+.inner{
+	width: 100%;
+	max-width: 95vw;
+}
+
+.flex-container{
+	display: initial;
+}
+
+header{
+	height: auto;
+}
+
+.logo{
+	width: 150px;
+	margin: 0 auto;
+}
+
+.nav-global{
+	max-width: 100vw;
+	width: 100%;
+	padding-top: 5px;
+}
+.nav-global ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.nav-global ul li{
+	font-size: 10px;
+	display: block;
+	text-align: center;
+	margin: 0 5px;
+}
+
+.nav-sub ul li{
+	padding: 20px 0;
+}
+
+.l-pan{
+	padding: 10px;
+	background-color: #ddd;
+}
+
+.pan-ul{
+	display: flex;
+}
+
+.l-page-toptxt{
+	padding: 5vh 10px;
+}
+
+.l-top-txt{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.nav-sect li{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.nav-sect li:last-child{
+	width: 100%;
+}
+
+.nav-sect li a{
+	color: black;
+}
+
+.article{
+	width: 100%;
+}
+
+.article-btn{
+	display: flex;
+}
+
+/*/////////////ハンバーガー////////////*/
+
+.headerNav ul {
+    transition: all .6s;
+    overflow-y: auto;
+    padding-top: 60px;
+    width: 300px;
+    height: 100vh;
+    z-index: 200;
+    top: 0;
+    right: -300px;
+    background-color: gray;
+    position: fixed;
+    display: block;
+}
+
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    z-index: 300;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .hamburger_line {
+    transition: all .6s;
+    width: 34px;
+    height: 2px;
+    left: 5px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 1px;
+  }
+
+  .hamburger_line-1 { top: 10px; }
+  .hamburger_line-2 { top: 22px; }
+  .hamburger_line-3 { top: 34px; }
+  .hamburger_bg {
+    opacity: 0;
+    transition: all .6s;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: #000;
+    cursor: pointer;
+    position: fixed;
+  }
+
+  /* ハンバーガー内表示時 */
+  .navOpen .hamburger_line {
+    background-color: #eee;
+  }
+  .navOpen .headerNav ul { right: 0; }
+  .navOpen .hamburger_bg {
+    opacity: .5;
+    visibility: visible;
+  }
+  .navOpen .hamburger_line-1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .navOpen .hamburger_line-2 {
+    width: 0;
+    left: 50%;
+  }
+  .navOpen .hamburger_line-3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+
+}
+
+
+
+
+
+
+
